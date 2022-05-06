@@ -1,12 +1,18 @@
-
+package common;
 
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 
+/**
+ * The class TrieNode represents the node for each added character in a user's word
+ */
 public class TrieNode {
 
     private char c;
+    /**
+     * saving the parent node in order to update the suggestion list of all the parents
+     */
     private TrieNode parent;
     private HashMap<Character, TrieNode> children = new HashMap<Character, TrieNode>();
     private boolean isLeaf;
@@ -21,10 +27,19 @@ public class TrieNode {
         this.c = c;
     }
 
+    /**
+     * checking if the list already containing the word in the suggestions list
+     * @param word
+     * @return - true if the word exists
+     */
     private boolean isSuggestionListConatainsWord(String word) {
         return suggestionList.stream().anyMatch(o -> o.getSuggestion().equals(word));
     }
 
+    /**
+     * @param updatedSuggestion
+     * @return the index of the suggested word
+     */
     private int returnIndexOfEelement(Suggestion updatedSuggestion) {
         for (int index = 0; index < suggestionList.size(); index++) {
             if (suggestionList.get(index).getSuggestion().equals(updatedSuggestion.getSuggestion())) {
@@ -34,10 +49,18 @@ public class TrieNode {
         return -1;
     }
 
+    /**
+     * updating the existing suggestion with the number of searched times
+     * @param updatedSuggestion
+     */
     private void updateSuggestionList(Suggestion updatedSuggestion) {
-        suggestionList.set(returnIndexOfEelement(updatedSuggestion), updatedSuggestion);
+        suggestionList.get(returnIndexOfEelement(updatedSuggestion)).setNumOfSearchTimes(updatedSuggestion.getNumOfSearchTimes());
     }
 
+    /**
+     * invoke this method when the user presses search, and update the list for this node.
+     * @param suggestionWord
+     */
     public void updateNodeSuggestions(Suggestion suggestionWord) {
         if (suggestionList.isEmpty()) {
             suggestionList.add(suggestionWord);

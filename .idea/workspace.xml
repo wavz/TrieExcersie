@@ -1,14 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="517ae9d0-37e5-49bf-8d6a-790639c32e78" name="Changes" comment="" />
+    <list default="true" id="517ae9d0-37e5-49bf-8d6a-790639c32e78" name="Changes" comment="initial">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/TestPrefixTree.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TrieExcersie.iml" beforeDir="false" afterPath="$PROJECT_DIR$/TrieExcersie.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Suggestion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/common/Suggestion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Trie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/common/Trie.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TrieNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/common/TrieNode.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="28morauEzgHQ7FwexQb6RnBOwUj" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -18,10 +36,82 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Downloaded.Files.Path.Enabled": "false",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true"
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "last_opened_file_path": "C:/Users/wavz/IdeaProjects/TrieExcersie/src"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\wavz\IdeaProjects\TrieExcersie\src" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.TestPrefixTree.testUserSuggestionsFunction">
+    <configuration name="TestPrefixTree" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TrieExcersie" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TestPrefixTree" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestPrefixTree,testInsertFunction and 1 more" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TrieExcersie" />
+      <option name="TEST_OBJECT" value="pattern" />
+      <patterns>
+        <pattern testClass="TestPrefixTree,testInsertFunction" />
+        <pattern testClass="TestPrefixTree,testStartWithFunction" />
+      </patterns>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestPrefixTree.testInsertFunction" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TrieExcersie" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TestPrefixTree" />
+      <option name="METHOD_NAME" value="testInsertFunction" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestPrefixTree.testStartWithFunction" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TrieExcersie" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TestPrefixTree" />
+      <option name="METHOD_NAME" value="testStartWithFunction" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestPrefixTree.testUserSuggestionsFunction" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TrieExcersie" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TestPrefixTree" />
+      <option name="METHOD_NAME" value="testUserSuggestionsFunction" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.TestPrefixTree.testUserSuggestionsFunction" />
+        <item itemvalue="JUnit.TestPrefixTree,testInsertFunction and 1 more" />
+        <item itemvalue="JUnit.TestPrefixTree" />
+        <item itemvalue="JUnit.TestPrefixTree.testStartWithFunction" />
+        <item itemvalue="JUnit.TestPrefixTree.testInsertFunction" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -31,6 +121,36 @@
       <option name="presentableId" value="Default" />
       <updated>1651831322672</updated>
     </task>
+    <task id="LOCAL-00001" summary="initial">
+      <created>1651831381564</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1651831381564</updated>
+    </task>
+    <task id="LOCAL-00002" summary="initial">
+      <created>1651832396938</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1651832396938</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="initial" />
+    <option name="LAST_COMMIT_MESSAGE" value="initial" />
   </component>
 </project>

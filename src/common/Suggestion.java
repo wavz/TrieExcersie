@@ -1,6 +1,18 @@
+package common;
+
+/**
+ * the class represents the suggestion for the user
+ */
 public class Suggestion implements Comparable<Suggestion>{
 
+    /**
+     * @param suggestion - represents the suggested word for the user
+     */
     private String suggestion;
+
+    /**
+     * @paran numOfSearchTimes - the number of times the word was being searched
+     */
     private Integer numOfSearchTimes;
 
     public Suggestion(String suggestion, int numOfSearchTimes){
@@ -26,6 +38,11 @@ public class Suggestion implements Comparable<Suggestion>{
     }
 
 
+    /**
+     * override the function compareTo in order to do an easy sort
+     * @param o the object to be compared.
+     * @return
+     */
     @Override
     public int compareTo(Suggestion o)
     {
@@ -39,7 +56,7 @@ public class Suggestion implements Comparable<Suggestion>{
 
     @Override
     public String toString() {
-        return "Suggestion{" +
+        return "common.Suggestion{" +
                 "suggestion='" + suggestion + '\'' +
                 ", numOfSearchTimes=" + numOfSearchTimes +
                 '}';
