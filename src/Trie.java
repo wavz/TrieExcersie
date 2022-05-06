@@ -122,7 +122,7 @@ public class Trie {
     }
 
 
-    void displayFoundWords() {
+    public void displayFoundWords() {
         System.out.println("_______________");
         for (String word : relatedWords) {
             System.out.println(word);
@@ -130,6 +130,16 @@ public class Trie {
         System.out.println("________________");
 
     }
+
+    public List<Suggestion> suggest(String userInput){
+        if (startsWith(userInput)){
+            TrieNode tn = searchNode(userInput);
+            return tn.getSuggestionList();
+        }
+        return Collections.emptyList();
+    }
+
+
 
 
     public static void main(String[] args) {
@@ -163,12 +173,9 @@ public class Trie {
         prefixTree.search("GOING");
 
 
-        if (prefixTree.startsWith("GO")) {
-            TrieNode tn = prefixTree.searchNode("GO");
-            prefixTree.wordsFinderTraversal(tn);
-            prefixTree.displayFoundWords();
-
-        }
+        List<Suggestion> userSuggestions = prefixTree.suggest("GO");
+        Collections.reverse(userSuggestions);
+        System.out.println(userSuggestions);
 //
 //        if (prefixTree.startsWith("GOD")) {
 //            TrieNode tn = prefixTree.searchNode("GOD");
