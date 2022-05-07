@@ -3,6 +3,7 @@ package common;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
+import java.util.stream.IntStream;
 
 /**
  * The class TrieNode represents the node for each added character in a user's word
@@ -41,12 +42,9 @@ public class TrieNode {
      * @return the index of the suggested word
      */
     private int returnIndexOfEelement(Suggestion updatedSuggestion) {
-        for (int index = 0; index < suggestionList.size(); index++) {
-            if (suggestionList.get(index).getSuggestion().equals(updatedSuggestion.getSuggestion())) {
-                return index;
-            }
-        }
-        return -1;
+        return IntStream.range(0, suggestionList.size())
+                .filter(i -> suggestionList.get(i).getSuggestion().equals(updatedSuggestion.getSuggestion()))
+                .findFirst().orElse(-1);
     }
 
     /**
