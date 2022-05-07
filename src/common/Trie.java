@@ -100,4 +100,8 @@ public class Trie {
         return Collections.emptyList();
     }
 
+
+    public static void main(String[] args) {
+
+    }
 }

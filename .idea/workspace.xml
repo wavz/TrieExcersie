@@ -2,13 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="517ae9d0-37e5-49bf-8d6a-790639c32e78" name="Changes" comment="initial">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/TestPrefixTree.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/SearchSolution.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TrieExcersie.iml" beforeDir="false" afterPath="$PROJECT_DIR$/TrieExcersie.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Suggestion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/common/Suggestion.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Trie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/common/Trie.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TrieNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/common/TrieNode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/common/Trie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/common/Trie.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/TestPrefixTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/TestPrefixTree.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,40 +31,42 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Downloaded.Files.Path.Enabled": "false",
-    "Repository.Attach.Annotations": "false",
-    "Repository.Attach.JavaDocs": "false",
-    "Repository.Attach.Sources": "false",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "C:/Users/wavz/IdeaProjects/TrieExcersie/src"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/wavz/Documents&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\wavz\IdeaProjects\TrieExcersie\src" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.TestPrefixTree.testUserSuggestionsFunction">
+  <component name="RunManager" selected="Application.SearchSolution">
+    <configuration name="SearchSolution" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="main.SearchSolution" />
+      <module name="TrieExcersie" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="main.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="TestPrefixTree" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TrieExcersie" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="TestPrefixTree" />
       <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestPrefixTree,testInsertFunction and 1 more" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="TrieExcersie" />
-      <option name="TEST_OBJECT" value="pattern" />
-      <patterns>
-        <pattern testClass="TestPrefixTree,testInsertFunction" />
-        <pattern testClass="TestPrefixTree,testStartWithFunction" />
-      </patterns>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -104,11 +103,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.SearchSolution" />
         <item itemvalue="JUnit.TestPrefixTree.testUserSuggestionsFunction" />
-        <item itemvalue="JUnit.TestPrefixTree,testInsertFunction and 1 more" />
-        <item itemvalue="JUnit.TestPrefixTree" />
         <item itemvalue="JUnit.TestPrefixTree.testStartWithFunction" />
         <item itemvalue="JUnit.TestPrefixTree.testInsertFunction" />
+        <item itemvalue="JUnit.TestPrefixTree" />
       </list>
     </recent_temporary>
   </component>
@@ -135,7 +134,28 @@
       <option name="project" value="LOCAL" />
       <updated>1651832396938</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="initial">
+      <created>1651837069364</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1651837069364</updated>
+    </task>
+    <task id="LOCAL-00004" summary="initial">
+      <created>1651920513056</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1651920513056</updated>
+    </task>
+    <task id="LOCAL-00005" summary="initial">
+      <created>1651920631098</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1651920631098</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

@@ -1,47 +1,16 @@
+package main;
+
 import common.Suggestion;
 import common.Trie;
-import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Test;
 
 import java.util.Collections;
 import java.util.List;
 
-import static org.junit.jupiter.api.Assertions.*;
+public class SearchSolution {
 
+    public static void main(String[] args) {
+        Trie prefixTree = new Trie();
 
-public class TestPrefixTree {
-
-    private Trie prefixTree;
-
-    @BeforeEach
-    public void cleanUp(){
-        prefixTree = new Trie();
-    }
-
-
-    @Test
-    public void testInsertFunction(){
-
-        prefixTree.insert("book");
-        prefixTree.insert("booking");
-
-        assertTrue(prefixTree.search("book"));
-        assertFalse(prefixTree.search("booki"));
-
-    }
-
-    @Test
-    public void testStartWithFunction(){
-
-        prefixTree.insert("booking");
-        prefixTree.insert("bank");
-
-        assertTrue(prefixTree.startsWith("bo"));
-        assertFalse(prefixTree.startsWith("ob"));
-    }
-
-    @Test
-    public void testUserSuggestionsFunction(){
         prefixTree.insert("book");
         prefixTree.insert("booking");
         prefixTree.insert("bool");
@@ -68,8 +37,11 @@ public class TestPrefixTree {
 
         List<Suggestion> userSuggestions = prefixTree.suggest("boo");
         Collections.reverse(userSuggestions);
-        System.out.println(userSuggestions);
-        assertEquals("book", userSuggestions.get(0).getSuggestion());
+        System.out.println("The prefix tree search result is book, since the book word was searched 5 times:\n");
+        System.out.println(userSuggestions + "\n");
+
+
+        System.out.println("The prefix tree will be updated and print boost as the first out of 10 options: \n");
 
         prefixTree.search("boost");
         prefixTree.search("boost");
@@ -82,8 +54,6 @@ public class TestPrefixTree {
         List<Suggestion> updatedUserSuggestions = prefixTree.suggest("boo");
         Collections.reverse(updatedUserSuggestions);
         System.out.println(updatedUserSuggestions);
-        assertEquals("boost", updatedUserSuggestions.get(0).getSuggestion());
-
     }
 
 }
