@@ -116,4 +116,17 @@ public class TrieNode {
     public List<Suggestion> getSuggestionList() {
         return suggestionList;
     }
+
+
+    @Override
+    public String toString() {
+        return "TrieNode{" +
+                "c=" + c +
+                ", parent=" + parent +
+                ", children=" + children +
+                ", isLeaf=" + isLeaf +
+                ", numOfSearches=" + numOfSearches +
+                ", suggestionList=" + suggestionList +
+                '}';
+    }
 }
